@@ -1,5 +1,6 @@
 package com.softserveinc;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -33,7 +34,14 @@ import java.util.Scanner;
 public class Task02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // TODO: Write your code here
+        System.out.print("Write how many cups of coffee you will need:\n" + ">>> ");
+        int cup = scanner.nextInt();
+        int water = 200 * cup;
+        int milk = 50 * cup;
+        System.out.print("For " + cup + " cups of coffee you will need:\n"
+                        + water + " ml of water\n"
+                        + milk + " ml of milk\n"
+                        + 15 * cup + " g of coffee beans");
 
     }
 }
